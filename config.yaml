@@ -1,0 +1,23 @@
+---
+- component:
+    name: nsx-proxy
+    files:
+      - var/log/syslog
+    patterns:
+      - APH is running
+      - MPA is running
+
+- component:
+    name: opsAgent
+    files:
+      - var/log/syslog
+    patterns:
+      - opsAgent is starting
+      - opsAgent failed
+
+- component:
+    name: mpa
+    files:
+      - var/log/syslog
+    patterns:
+      - MPA connection fully established
